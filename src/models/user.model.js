@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 
 const userSchema = new Schema(
   {
-    userName: {
+    username: {
       type: String,
       required: true,
       unique: true,
@@ -38,7 +38,7 @@ const userSchema = new Schema(
         ref: "Video",
       },
     ],
-    assword: {
+    password: {
       type: String,
       require: [true, "Password is required"],
     },
